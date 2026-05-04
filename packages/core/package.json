@@ -1,0 +1,45 @@
+{
+  "name": "@phoenixaihub/agent-checkpoint-core",
+  "version": "1.0.0",
+  "description": "Core checkpoint/restore engine for AI agent cognitive state",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src tests --ext .ts",
+    "format": "prettier --write src tests",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tsup": "^8.0.2",
+    "vitest": "^1.6.0"
+  },
+  "keywords": [
+    "checkpoint",
+    "restore",
+    "agent",
+    "state",
+    "durability"
+  ],
+  "author": "Phoenix AI",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phoenix-assistant/agent-checkpoint.git",
+    "directory": "packages/core"
+  }
+}

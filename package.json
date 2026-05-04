@@ -1,0 +1,35 @@
+{
+  "name": "@phoenixaihub/agent-checkpoint-monorepo",
+  "version": "1.0.0",
+  "description": "Durable checkpoint/restore for AI agent cognitive state",
+  "private": true,
+  "scripts": {
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "format": "pnpm -r format",
+    "clean": "pnpm -r clean"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@typescript-eslint/eslint-plugin": "^7.11.0",
+    "@typescript-eslint/parser": "^7.11.0",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "ai",
+    "agent",
+    "checkpoint",
+    "restore",
+    "state",
+    "durability"
+  ],
+  "author": "Phoenix AI",
+  "license": "MIT"
+}
